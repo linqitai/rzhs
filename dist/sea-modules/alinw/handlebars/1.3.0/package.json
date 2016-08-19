@@ -1,0 +1,29 @@
+{
+  "family": "alinw",
+  "name": "handlebars",
+  "version": "1.3.0",
+  "description": "The best project ever.",
+  "homepage": "",
+  "author": "",
+  "maintainers": [
+    ""
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://gitlab.alibaba-inc.com/alinw/handlebars.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [],
+  "licenses": "MIT",
+  "spm": {
+    "output": [
+      "handlebars.js",
+      "runtime.js"
+    ],
+    "alias": {},
+    "devAlias": {},
+    "engines": {}
+  }
+}

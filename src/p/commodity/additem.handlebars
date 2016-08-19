@@ -1,0 +1,37 @@
+{{#if this}}
+        {{#each this}}
+        <li>
+            <div class="leftmore">
+                <i class="icon icon-reduce"></i>
+            </div>
+            <div class="rightmore">
+                <input type="text" placeholder="请输入商品规格" class="morename" value="{{spec}}">
+                <div>
+                    <input type="text" placeholder="原价" class="oneprice" value="{{primePrice}}">
+                    <input type="text" placeholder="现价" class="twoprice" value="{{currentPrice}}">
+                    <input type="text" placeholder="返佣" class="threeprice" value="{{backPrice}}">
+                </div>
+            </div>
+            <div class="right-silde">
+                删除
+            </div>
+        </li>
+        {{/each}}
+    {{else}}
+    <li>
+        <div class="leftmore">
+            <i class="icon icon-reduce"></i>
+        </div>
+        <div class="rightmore">
+            <input type="text" placeholder="请输入商品规格" class="morename">
+            <div>
+                <input type="text" placeholder="原价" class="oneprice">
+                <input type="text" placeholder="现价" class="twoprice">
+                <input type="text" placeholder="返佣" class="threeprice">
+            </div>
+        </div>
+        <div class="right-silde">
+            删除
+        </div>
+    </li>
+    {{/if}}

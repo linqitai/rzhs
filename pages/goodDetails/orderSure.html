@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>预约确认</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+
+    <link rel='stylesheet' href='/jx-business/src/c/css/base/sm.css'/>    
+
+    <link rel="stylesheet" href="/jx-business/src/c/css/normalize.css">
+    <link rel='stylesheet' href='/jx-business/src/c/css/common.css'/>
+    <link rel="stylesheet" href="/jx-business/src/p/goodDetails/orderSure.css">
+    <script src="https://a.alipayobjects.com/??seajs/seajs/2.1.1/sea.js,seajs/seajs-combo/1.0.0/seajs-combo.js,seajs/seajs-text/1.0.2/seajs-text.js,seajs/seajs-style/1.0.2/seajs-style.js,seajs/seajs-log/1.0.0/seajs-log.js,gallery/json/1.0.3/json.js"></script>
+
+    <script src="/jx-business/src/config.js"></script>
+    <script>
+        seajs.config({
+            paths: {
+                alinw: '/jx-business/sea-modules/alinw',
+                devo: 'http://192.168.19.46'
+            },
+
+            comboExcludes: /.*/,
+            alias: {
+                'handlebars': 'alinw/handlebars/1.3.0/handlebars'
+            }
+        });
+
+        seajs.use([
+
+        ]);
+    </script>
+</head>
+<body>
+    <div class="page page-current" id='orderSure'> 
+        <header class="bar bar-nav">
+            <a class="icon icon-left pull-left"></a>  
+            <h1 class="title">预约确认</h1>
+        </header>
+        <div class="order-content">
+            <div class="order-goods">
+                <div class="order-img">
+                    <img src="http://static.hpbanking.com/xg/uploads/files/ef79a708af962cf34dded78a59a7f181-330-330.png">
+                </div>
+                <div class="order-txt">
+                    <div class="order-title">纯色短袖t恤女纯棉学生宽松韩版半袖粉色女装 半袖粉色女装</div>
+                    <div class="order-type">颜色：白色，尺码：XL</div>
+                    <div class="order-price">
+                        <span class="order-price-1">￥89.90</span>
+                        <!-- <span class="order-price-2">x1</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="order-num">
+                <div class="order-num-1">购买数量</div>
+                <div class="order-num-2">
+                    <span class="add" id="J_add">
+                        <img src="http://static.hpbanking.com/xg/uploads/files/323eb4e6951a61cc620ce85790978751-50-50.png">
+                    </span>
+                    <span class="num" id="J_num">1</span>
+                    <span class="reduce" id="J_reduce">
+                        <img src="http://static.hpbanking.com/xg/uploads/files/569fd68f4b44ec8297ddc1d7c64adccd-50-50.png">
+                    </span>
+                </div>
+            </div>
+            <div class="order-money">                
+                <div class="order-money-input"><input type="text" placeholder="最多10.00元"/></div>
+                <div class="order-money-tip">使用代金券</div>
+            </div>
+            <div class="order-acount">
+                <div class="order-acount-txt">共<span>1</span>件商品  合计：<span class="orange">￥89.90</span></div>
+            </div>
+        </div>
+        <div class="protocol"><input type="checkbox" checked>付款视为同意 <a href="">《*****协议》</a></div>
+        <div class="order-sure">确认预约</div>
+    </div>
+    <script>
+        seajs.use('/jx-business/src/p/goodDetails/orderSure');
+    </script>
+</body>
+</html>

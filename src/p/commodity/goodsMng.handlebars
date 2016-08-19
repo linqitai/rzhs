@@ -1,0 +1,31 @@
+{{#each this}}
+<div class="goodsList">
+    <div class="upperBox">
+        <a href="/product/goodDetails/goodsDetails.htm?id={{id}}" external>
+            <div class="upperBox-left">
+                <img src="{{zoomPicPath}}" alt="">
+            </div>
+            <div class="upperBox-right">            
+                <div class="titleFont">{{name}} </div>
+                <div class="viewFont">
+                    <div class="money">&yen; {{showPrice}}</div>
+                    {{#unless  status}}
+                        <div class="status over">已下架</div>
+                    {{else}}
+                        <div class="status">在售</div>
+                    {{/unless }}
+                </div>            
+            </div>
+        </a>
+    </div>
+    <div class="downBox">
+        {{#unless  status}}
+            <div class="downBox-left upgoods" data-goodid="{{id}}">上架</div>
+        {{else}}
+            <div class="downBox-left downgoods" data-goodid="{{id}}">下架</div>
+        {{/unless }}
+        <div class="downBox-left editgoods" data-goodid="{{id}}">编辑</div>
+        <div class="downBox-right deletegoods" data-goodid="{{id}}">删除</div>
+    </div>
+</div>
+{{/each}}

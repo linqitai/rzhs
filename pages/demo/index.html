@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>社区电商</title>   
+    <script type="text/javascript">
+        function showPreview(source) {
+            var file = source.files[0];
+            if(window.FileReader) {
+                var fr = new FileReader();
+                fr.onloadend = function(e) {
+                    document.getElementById("portrait").src = e.target.result;
+                };
+                fr.readAsDataURL(file);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="file" name="file" onchange="showPreview(this)" />
+    <img id="portrait" src="" width="70" height="75">
+</body>
+</html>

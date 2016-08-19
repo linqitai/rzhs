@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>商品管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+
+    <link rel='stylesheet' href='/jx-business/src/c/css/base/sm.css'/>
+    <link rel='stylesheet' href='/jx-business/src/c/css/base/sm-extend.css'/>
+
+    <link rel="stylesheet" href="/jx-business/src/c/css/normalize.css">
+    <link rel="stylesheet" href="/jx-business/src/c/css/common.css">
+    <link rel="stylesheet" href="/jx-business/src/p/commodity/index.css">
+    <script src="https://a.alipayobjects.com/??seajs/seajs/2.1.1/sea.js,seajs/seajs-combo/1.0.0/seajs-combo.js,seajs/seajs-text/1.0.2/seajs-text.js,seajs/seajs-style/1.0.2/seajs-style.js,seajs/seajs-log/1.0.0/seajs-log.js,gallery/json/1.0.3/json.js"></script>
+
+    <script src="/jx-business/src/config.js"></script>
+    <script>
+        seajs.config({
+            paths: {
+                alinw: '/jx-business/sea-modules/alinw',
+                devo: 'http://192.168.19.249'
+            },
+
+            comboExcludes: /.*/,
+            alias: {
+                'handlebars': 'alinw/handlebars/1.3.0/handlebars'
+            }
+        });
+
+        seajs.use([
+
+        ]);
+    </script>
+</head>
+<body>
+<div class="page" id="myGoods" >
+    <header class="bar bar-nav shadow">
+        <a class="icon icon-left pull-left" href="/jx-business/pages/home/index.html" external></a>
+        <div class="titletype active"><a href="">商品管理</a></div>
+        <div class="titletype"><a href="">预约管理</a></div>
+        <div class="titletype "><a href="">代金卷</a></div>
+    </header>
+    <div class="content" >
+        <div class="select-tab">
+            <div class="buttons-tab views">
+                <a href="#tab1" class="tab-link active button"><span>全部</span></a>
+                <a href="#tab2" class="tab-link button"><span>在售</span></a>
+                <a href="#tab3" class="tab-link button"><span>下架</span></a>
+            </div>
+        </div>
+        <div class="content-block">
+            <div class="tabs">
+                <div id="tab1" class="tab active">
+                    <div class="content-block" id="blacok1">
+                        <div class="listview" id="listview1">
+                            <div class="goodsList">
+                                <div class="upperBox">
+                                    <div class="upperBox-left"><img src="http://img01.jiuxian.com/upload/goods/13969/f/1389580907135.jpg" alt=""></div>
+                                    <div class="upperBox-right">
+                                        <div class="titleFont">纯色短袖T恤女纯棉 </div>
+                                        <div class="viewFont">
+                                            <div class="money">￥89.90</div>
+                                            <div class="status">在售</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="downBox">
+                                    <div class="downBox-left downgoods"><a >下架</a></div>
+                                    <div class="downBox-left editgoods"><a >编辑</a></div>
+                                    <div class="downBox-right deletegoods"><a >删除</a></div>
+                                </div>
+                            </div>
+                            <div class="goodsList">
+                                <div class="upperBox">
+                                    <div class="upperBox-left"><img src="http://img01.jiuxian.com/upload/goods/13969/f/1389580907135.jpg" alt=""></div>
+                                    <div class="upperBox-right">
+                                        <div class="titleFont">纯色短袖T恤女纯棉学生宽松韩版半袖粉色女装 半袖粉色女装 </div>
+                                        <div class="viewFont">
+                                            <div class="money">￥89.90</div>
+                                            <div class="status over">已下架</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="downBox">
+                                    <div class="downBox-left upgoods"><a >上架</a></div>
+                                    <div class="downBox-left editgoods"><a >编辑</a></div>
+                                    <div class="downBox-right deletegoods"><a >删除</a></div>
+                                </div>
+                            </div>
+                            <div class="goodsList">
+                                <div class="upperBox">
+                                    <div class="upperBox-left"><img src="http://img01.jiuxian.com/upload/goods/13969/f/1389580907135.jpg" alt=""></div>
+                                    <div class="upperBox-right">
+                                        <div class="titleFont">纯色短袖T恤女纯棉学生宽松韩版半袖粉色女装 半袖粉色女装 </div>
+                                        <div class="viewFont">
+                                            <div class="money">￥89.90</div>
+                                            <div class="status over">已下架</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="downBox">
+                                    <div class="downBox-left upgoods"><a >上架</a></div>
+                                    <div class="downBox-left editgoods"><a >编辑</a></div>
+                                    <div class="downBox-right deletegoods"><a >删除</a></div>
+                                </div>
+                            </div>
+                            <div class="goodsList">
+                                <div class="upperBox">
+                                    <div class="upperBox-left"><img src="http://img01.jiuxian.com/upload/goods/13969/f/1389580907135.jpg" alt=""></div>
+                                    <div class="upperBox-right">
+                                        <div class="titleFont">纯色短袖T恤女纯棉学生宽松韩版半袖粉色女装 半袖粉色女装 </div>
+                                        <div class="viewFont">
+                                            <div class="money">￥89.90</div>
+                                            <div class="status over">已下架</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="downBox">
+                                    <div class="downBox-left upgoods"><a >上架</a></div>
+                                    <div class="downBox-left editgoods"><a >编辑</a></div>
+                                    <div class="downBox-right deletegoods"><a >删除</a></div>
+                                </div>
+                            </div>
+                            <div class="goodsList">
+                                <div class="upperBox">
+                                    <div class="upperBox-left"><img src="http://img01.jiuxian.com/upload/goods/13969/f/1389580907135.jpg" alt=""></div>
+                                    <div class="upperBox-right">
+                                        <div class="titleFont">纯色短袖T恤女纯棉学生宽松韩版半袖粉色女装 半袖粉色女装 </div>
+                                        <div class="viewFont">
+                                            <div class="money">￥89.90</div>
+                                            <div class="status over">已下架</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="downBox">
+                                    <div class="downBox-left upgoods"><a >上架</a></div>
+                                    <div class="downBox-left editgoods"><a >编辑</a></div>
+                                    <div class="downBox-right deletegoods"><a >删除</a></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="infinite-scroll-preloader">
+                            <div class="preloader"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="tab">
+                    <div class="content-block" id="blacok2">
+                        <div class="listview" id="listview2">
+                            <div class="missing">
+                                <img src="http://static.hpbanking.com/xg/uploads/files/6c038b5768301c51fc839c06f93cc4e7-120-120.png" alt="">
+                                <div>暂无记录</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infinite-scroll-preloader">
+                        <div class="preloader">
+                        </div>
+                    </div>
+
+                </div>
+                <div id="tab3" class="tab">
+                    <div class="content-block">
+                        <div class="listview" id="listview3">
+                            <div class="goodsList">
+                                <div class="upperBox">
+                                    <div class="upperBox-left"><img src="http://img01.jiuxian.com/upload/goods/13969/f/1389580907135.jpg" alt=""></div>
+                                    <div class="upperBox-right">
+                                        <div class="titleFont">纯色短袖T恤女纯棉学生宽松韩版半袖粉色女装 半袖粉色女装 </div>
+                                        <div class="viewFont">
+                                            <div class="money">￥89.90</div>
+                                            <div class="status">在售</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="downBox">
+                                    <div class="downBox-left downgoods"><a >下架</a></div>
+                                    <div class="downBox-left editgoods"><a >编辑</a></div>
+                                    <div class="downBox-right deletegoods"><a >删除</a></div>
+                                </div>
+                            </div>
+                            <div class="goodsList">
+                                <div class="upperBox">
+                                    <div class="upperBox-left"><img src="http://img01.jiuxian.com/upload/goods/13969/f/1389580907135.jpg" alt=""></div>
+                                    <div class="upperBox-right">
+                                        <div class="titleFont">纯色短袖T恤女纯棉学生宽松韩版半袖粉色女装 半袖粉色女装 </div>
+                                        <div class="viewFont">
+                                            <div class="money">￥89.90</div>
+                                            <div class="status over">已下架</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="downBox">
+                                    <div class="downBox-left upgoods"><a >上架</a></div>
+                                    <div class="downBox-left editgoods"><a >编辑</a></div>
+                                    <div class="downBox-right deletegoods"><a >删除</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infinite-scroll-preloader">
+                        <div class="preloader">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="addfunc">
+        <a href="" class="addicon"></a>
+        <a href="" class="returnTop"></a>
+    </div>
+</div>
+<script>
+    seajs.use('/jx-business/src/p/commodity/myGoods');
+</script>
+</body>
+</html>

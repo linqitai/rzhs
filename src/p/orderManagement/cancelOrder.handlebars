@@ -1,0 +1,23 @@
+{{#each this}}
+    <div class="orderList">
+        <div class="storeName">店铺名称{{storeName}}</div>
+        <div class="goodsInfoItem">
+            <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" external>
+                <img class="goodsPic left" src="{{imgUrl}}">
+            </a>
+            <div class="rightBox">
+                <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" class="goodsInfo" external>
+                    <div class="goodsName">{{name}}</div>
+                    <div class="priceBox right">
+                        <div class="goodsPrice">&yen {{price}}</div>
+                        <div class="voucherBox">使用代金券<span class="voucher">{{discount}}</span>元</div>
+                    </div>
+                </a>
+                <div class="btnGroup">
+                    次订单已取消
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}
+
