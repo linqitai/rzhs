@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>社区电商</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>  
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+
+    <link rel='stylesheet' href='/jx-business/src/c/css/base/sm.css' />
+    <!-- <link rel='stylesheet' href='/jx-business/src/c/css/base/sm-extend.css' /> -->
+    <link rel='stylesheet' href='/jx-business/src/c/css/base/swiper.css' />
+
+    <link rel="stylesheet" href="/jx-business/src/c/css/normalize.css">
+    <link rel="stylesheet" href="/jx-business/src/c/css/common.css">
+    <link rel="stylesheet" href="/jx-business/src/p/home/index.css">
+
+    <script src="https://a.alipayobjects.com/??seajs/seajs/2.1.1/sea.js,seajs/seajs-combo/1.0.0/seajs-combo.js,seajs/seajs-text/1.0.2/seajs-text.js,seajs/seajs-style/1.0.2/seajs-style.js,seajs/seajs-log/1.0.0/seajs-log.js,gallery/json/1.0.3/json.js"></script>
+
+    <script src="/jx-business/src/config.js"></script>
+    <script>  
+            seajs.config({
+                paths: {   
+                    alinw: '/jx-business/sea-modules/alinw',            
+                    devo: 'http://192.168.18.65'
+                },
+
+                comboExcludes: /.*/,
+                alias: {
+                    'handlebars': 'alinw/handlebars/1.3.0/handlebars'
+                }
+            });
+
+            seajs.use([    
+             
+            ]);
+    </script>
+
+</head>
+<body>
+
+    <div class="page page-current" id='index'> 
+        <header class="bar bar-nav">
+            <a class="icon icon-left pull-left"></a>                
+            <a class="icon icon-search pull-right" href="#search"></a>
+            <h1 class="title">社区电商</h1>
+        </header>
+        <div class="content pull-to-refresh-content" data-ptr-distance="55" data-distance="100">
+            <!-- 默认的下拉刷新层 -->
+            <div class="pull-to-refresh-layer">
+                <div class="preloader"></div>
+                <div class="pull-to-refresh-arrow"></div>
+            </div> 
+            <div class="content-inner">      
+                <div class="banner">                        
+                    <div class="swiper-container" id="J_banner" data-space-between='10'>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="J_img_link" src="http://static.hpbanking.com/xg/uploads/files/f3fc0ef302bf121077256e7ede943d01-750-379.png" alt=""></div>
+                            <div class="swiper-slide"><img class="J_img_link" src="http://static.hpbanking.com/xg/uploads/files/f3fc0ef302bf121077256e7ede943d01-750-379.png" alt=""></div>
+                            <div class="swiper-slide"><img class="J_img_link" src="http://static.hpbanking.com/xg/uploads/files/f3fc0ef302bf121077256e7ede943d01-750-379.png" alt=""></div>                               
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="buttons-tab" id="J_menu">
+                    <img src="http://static.hpbanking.com/xg/uploads/files/e619f7dc6bff0a6354839136f99f3eb4-20-70.png" class="menu-mask">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#tab1" class="tab-link active button" data-type="all">全部</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#tab2" class="tab-link button" data-type="sp">饰品</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#tab3" class="tab-link button" data-type="yd">运动</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#tab4" class="tab-link button" data-type="mz">美妆</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#tab5" class="tab-link button" data-type="tz">童装</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#tab6" class="tab-link button" data-type="sp">食品</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#tab7" class="tab-link button" data-type="my">母婴</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#tab8" class="tab-link button" data-type="hw">户外</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#tab9" class="tab-link button" data-type="ly">旅游</a>
+                        </div>
+                    </div>
+                </div>                
+                <div class="content-block">
+                    <div class="tabs">
+                          <div id="tab1" class="tab active">
+                                <div class="goods-info">
+                                <ul class="list-container">
+                                    <li class="odd">
+                                        <div class="goods-info-wrap">
+                                            <div class="goods-pic">
+                                                <img src="http://static.hpbanking.com/xg/uploads/files/ef79a708af962cf34dded78a59a7f181-330-330.png">
+                                            </div>
+                                            <div class="goods-txt">
+                                                白衬衫 女 日系文艺小清新 纯棉宽松长袖打底白色...
+                                            </div>
+                                            <div class="goods-price">
+                                                <div class="goods-price-new"><i>￥</i>49.90</div>
+                                                <div class="goods-price-old"><i>￥</i>58.80</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="goods-info-wrap">
+                                            <div class="goods-pic">
+                                                <img src="http://static.hpbanking.com/xg/uploads/files/ef79a708af962cf34dded78a59a7f181-330-330.png">
+                                            </div>
+                                            <div class="goods-txt">
+                                                白衬衫 女 日系文艺小清新 纯棉宽松长袖打底白色...
+                                            </div>
+                                            <div class="goods-price"><i>￥</i>49.90</div>
+                                        </div>
+                                    </li>
+                                    <li class="odd">
+                                        <div class="goods-info-wrap">
+                                            <div class="goods-pic">
+                                                <img src="http://static.hpbanking.com/xg/uploads/files/ef79a708af962cf34dded78a59a7f181-330-330.png">
+                                            </div>
+                                            <div class="goods-txt">
+                                                白衬衫 女 日系文艺小清新 纯棉宽松长袖打底白色...
+                                            </div>
+                                            <div class="goods-price"><i>￥</i>49.90</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="goods-info-wrap">
+                                            <div class="goods-pic">
+                                                <img src="http://static.hpbanking.com/xg/uploads/files/ef79a708af962cf34dded78a59a7f181-330-330.png">
+                                            </div>
+                                            <div class="goods-txt">
+                                                白衬衫 女 日系文艺小清新 纯棉宽松长袖打底白色...
+                                            </div>
+                                            <div class="goods-price"><i>￥</i>49.90</div>
+                                        </div>
+                                    </li>
+                                    <li class="odd">
+                                        <div class="goods-info-wrap">
+                                            <div class="goods-pic">
+                                                <img src="http://static.hpbanking.com/xg/uploads/files/ef79a708af962cf34dded78a59a7f181-330-330.png">
+                                            </div>
+                                            <div class="goods-txt">
+                                                白衬衫 女 日系文艺小清新 纯棉宽松长袖打底白色...
+                                            </div>
+                                            <div class="goods-price"><i>￥</i>49.90</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="goods-info-wrap">
+                                            <div class="goods-pic">
+                                                <img src="http://static.hpbanking.com/xg/uploads/files/ef79a708af962cf34dded78a59a7f181-330-330.png">
+                                            </div>
+                                            <div class="goods-txt">
+                                                白衬衫 女 日系文艺小清新 纯棉宽松长袖打底白色...
+                                            </div>
+                                            <div class="goods-price"><i>￥</i>49.90</div>
+                                        </div>
+                                    </li>                          
+                                </ul>
+                            </div>
+                          </div>
+                          <div id="tab2" class="tab">
+                             2
+                          </div>
+                          <div id="tab3" class="tab">
+                             3
+                          </div>
+                          <div id="tab4" class="tab">
+                             4
+                          </div>
+                          <div id="tab5" class="tab">
+                             5
+                          </div>
+                          <div id="tab6" class="tab">
+                             6
+                          </div>
+                          <div id="tab7" class="tab">
+                             7
+                          </div>
+                          <div id="tab8" class="tab">
+                             8
+                          </div>
+                          <div id="tab9" class="tab">
+                             9
+                          </div>
+                    </div>
+                </div>
+                <!-- 加载提示符 -->
+                <div class="infinite-scroll-preloader" id="J_loading">
+                    <div class="preloader"></div>
+                </div>
+            </div>            
+        </div>        
+        <footer> 
+            <a href="/jx-business/pages/home/index.html" class="active" external> 
+                <div class="nav1"></div>                                             
+                <span class="f-txt">首页</span>
+            </a>
+            <a href="/jx-business/pages/commodity/myGoods.html" external>                        
+                <div class="nav2"></div>                                             
+                <span class="f-txt">我要买</span>
+            </a>
+            <a href="#">
+                <div class="nav3"></div>                                             
+                <span class="f-txt">我要卖</span>
+            </a>               
+        </footer>          
+    </div>
+    <div class="page" id="search">           
+        <header>
+            <a class="icon icon-left pull-left back" href="#index"></a>
+            <div class="search-bar">
+                <div class="search-input-wrap">
+                  <label class="icon icon-search" for="search"></label>
+                  <img src="http://static.hpbanking.com/xg/uploads/files/9c67bfe5f9c007e8faecbcd89949eaba-32-32.png" class="search-clean-img" id="J_clean_img">
+                  <input type="search" id="J_search_input" placeholder="输入商家和商品名...">
+                </div>
+                <span class="search-btn" id="J_search_btn">搜索</span>
+            </div>               
+        </header>
+        <div class="history-tip">历史搜索</div>
+        <div class="search-data"> 
+            <div class="search-list">                
+                <ul id="J_search_list">
+                  <!-- <li class="bb">123</li>
+                  <li>123</li> -->
+                </ul>
+            </div> 
+            <div class="search-clean">
+                <span class="search-clean-txt" id="J_clean_txt">清空搜索记录</span>
+            </div>
+        </div>
+        <div class="search-no-data">
+            <img src="http://static.hpbanking.com/xg/uploads/files/10f825fd8a0668d92becf7a9571ac777-120-120.png" class="search-no-img">
+            <div class="search-no-log">暂无记录</div>
+        </div> 
+    </div>  
+    <script>      
+        seajs.use('/jx-business/src/p/home/index');       
+    </script>
+</body>
+</html>

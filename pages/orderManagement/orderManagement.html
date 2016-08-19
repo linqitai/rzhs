@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>预约管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+
+    <link rel='stylesheet' href='/jx-business/src/c/css/base/sm.css'/>
+    <link rel='stylesheet' href='/jx-business/src/c/css/base/sm-extend.css'/>
+
+    <link rel="stylesheet" href="/jx-business/src/c/css/normalize.css">
+    <link rel="stylesheet" href="/jx-business/src/c/css/common.css">
+    <link rel="stylesheet" href="/jx-business/src/p/orderManagement/index.css">
+    <script src="https://a.alipayobjects.com/??seajs/seajs/2.1.1/sea.js,seajs/seajs-combo/1.0.0/seajs-combo.js,seajs/seajs-text/1.0.2/seajs-text.js,seajs/seajs-style/1.0.2/seajs-style.js,seajs/seajs-log/1.0.0/seajs-log.js,gallery/json/1.0.3/json.js"></script>
+
+    <script src="/jx-business/src/config.js"></script>
+    <script>
+        seajs.config({
+            paths: {
+                alinw: '/jx-business/sea-modules/alinw',
+                devo: 'http://192.168.19.6'
+            },
+
+            comboExcludes: /.*/,
+            alias: {
+                'handlebars': 'alinw/handlebars/1.3.0/handlebars'
+            }
+        });
+
+        seajs.use([
+
+        ]);
+    </script>
+</head>
+<body>
+<div class="page">
+    <header class="bar bar-nav shadow">
+        <a class="icon icon-left pull-left" style="position: absolute;"></a>
+        <div class="tabCut">
+            <div class="tabCutBox">
+                <span class="tabText active">预约管理</span><span class="tabLine">|</span><span class="tabText">代金卷管理</span>
+                <!--<div class="buttons-row">
+                    <a href="#tabCut1" class="tab-link active button">Tab 1</a>
+                    <a href="#tabCut2" class="tab-link button">Tab 3</a>
+                </div>-->
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div id="tabCut1">
+            <div class="select-tab">
+                <div class="buttons-tab views">
+                    <a href="#tab1" class="tab-link active button"><span>全部</span></a>
+                    <a href="#tab2" class="tab-link button"><span>已预约</span></a>
+                    <a href="#tab3" class="tab-link button"><span>待评价</span></a>
+                </div>
+            </div>
+            <div class="content-block" id="wrap">
+                <div class="tabs">
+                    <div id="tab1" class="tab active">
+                        <div class="content-block">
+                            <div class="listview" id="allOrder">
+
+                            </div>
+                            <div class="infinite-scroll-preloader">
+                                <div class="preloader"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab">
+                        <div class="content-block">
+                            <!--<div class="missing">
+                                <img src="http://static.hpbanking.com/xg/uploads/files/6c038b5768301c51fc839c06f93cc4e7-120-120.png" alt="">
+                                <div>暂无记录</div>
+                            </div>-->
+                            <div class="listview" id="ordered">
+
+                            </div>
+                            <div class="infinite-scroll-preloader">
+                                <div class="preloader"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab">
+                        <div class="content-block">
+                            <div class="listview" id="discuss">
+
+                            </div>
+                            <div class="infinite-scroll-preloader">
+                                <div class="preloader"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tabCut2">
+            <div class="list-block">
+                <ul>
+                    <!-- Text inputs -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="label">可用代金券总额：</div>
+                                <div class="label"><span class="AllVoucher">560.00</span>元</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="label">已使用代金券总额：</div>
+                                <div class="label vouchered">80.00元</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <!--<div class="list-block">
+                <ul class="list-container">
+                    &lt;!&ndash;<li class="orderMeList">
+                        <div class="orderMeLine1">
+                            <span class="customer left">心有灵犀一点通</span>
+                            <div class="createTimeBox right"><span>创建时间：</span><span class="createTime">2016-07-25 12:12:18</span></div>
+                        </div>
+                        <div class="goodsInfo">
+                            <img class="goodsPic left" src="http://img01.jiuxian.com/upload/goods/13969/f/1389580907135.jpg">
+                            <div class="rightBox left">
+                                <div style="overflow: hidden">
+                                    <div style="width: 60%;float: left">
+                                        <div class="goodsName">纯色短袖T恤女纯棉学生宽松韩版半袖粉色女装 半袖粉色女装</div>
+                                    </div>
+                                    <div style="width: 30%;float: right">
+                                        <div class="goodsPrice right">￥89.90</div>
+                                        <div class="goodsNumberBox right"><span style="font-size: 0.5rem">&Chi;</span> <span class="goodsNumber">2</span></div>
+                                    </div>
+                                </div>
+                                <div class="goodsInfoLastLine">
+                                    <div class="orderStatus left">已预约</div>
+                                    <div class="orderTotalPriceBox right">
+                                        <div><span>合计：</span><span class="orderTotalPrice">￥197.80</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>&ndash;&gt;
+                </ul>
+            </div>-->
+    </div>
+</div>
+<script>
+    var a = "   a   a   ";
+
+</script>
+<script>
+    seajs.use('/jx-business/src/p/orderManagement/index');
+</script>
+</body>
+</html>

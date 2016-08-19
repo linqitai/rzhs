@@ -1,0 +1,40 @@
+{{#each this}}
+    <div class="orderList">
+        <div class="orderMeLine1">
+            <span class="customer left">心有灵犀一点通</span>
+            <div class="createTimeBox right"><span>创建时间：</span><span class="createTime">{{createTime}}</span></div>
+        </div>
+        <div class="goodsInfo">
+            <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" external>
+                <img class="goodsPic left" src="{{imgUrl}}">
+            </a>
+            <div class="rightBox">
+                <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" external>
+                    <div class="goodsName">{{name}}</div>
+                    <div class="priceBox">
+                        <div class="goodsPrice">
+                            {{price}}
+                            <span class="goodsNumber f5">&Chi;</span>
+                            <span class="goodsNumber">{{amount}}</span>
+                        </div>
+                        <div class="lastLine">
+                            <div class="orderStatus left fb">
+                                已预约
+                            </div>
+                            <div class="right rep-m">
+                                使用代金券<span class="voucher">{{discount}}</span>元
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="btnGroup">
+                    <div class="orderTotalPriceBox left">
+                        <div class="boxMiddle"><span>合计：</span><span class="orderTotalPrice">&yen {{totalPrice}}</span></div>
+                    </div>
+                    <div class="sure sureBtn confirm-ok-cancel" data-id="{{id}}">确认消费</div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}
+

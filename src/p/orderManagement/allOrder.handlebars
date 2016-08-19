@@ -1,0 +1,128 @@
+
+{{#each this}}
+    {{#ifCond status "==" -1}}
+        <div class="orderList">
+            <div class="storeName">店铺名称{{storeName}}</div>
+            <div class="goodsInfoItem">
+                <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" external>
+                    <img class="goodsPic left" src="{{imgUrl}}">
+                </a>
+                <div class="rightBox">
+                    <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" class="goodsInfo" external>
+                        <div class="goodsName">{{name}}</div>
+                        <div class="priceBox right">
+                            <div class="goodsPrice">&yen {{price}}</div>
+                            <div class="voucherBox">使用代金券<span class="voucher">{{discount}}</span>元</div>
+                        </div>
+                    </a>
+                    <div class="btnGroup">
+                        <div class="textDescription">此订单已取消</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/ifCond}}
+    {{#ifCond status "==" 0}}
+        <div class="orderList">
+            <div class="storeName">店铺名称{{storeName}}</div>
+            <div class="goodsInfoItem">
+                <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" external>
+                    <img class="goodsPic left" src="{{imgUrl}}">
+                </a>
+                <div class="rightBox">
+                    <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" class="goodsInfo" external>
+                        <div class="goodsName">{{name}}</div>
+                        <div class="priceBox right">
+                            <div class="goodsPrice">&yen {{price}}</div>
+                            <div class="voucherBox">使用代金券<span class="voucher">{{discount}}</span>元</div>
+                        </div>
+                    </a>
+                    <div class="btnGroup">
+                        <button class="btn btn-default right cancelBtn confirm-ok-cancel" data-id="{{id}}">取消订单</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/ifCond}}
+    {{#ifCond status "==" 1}}
+        <div class="orderList">
+            <div class="storeName">{{storeName}}</div>
+            <div class="goodsInfoItem">
+                <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" external>
+                    <img class="goodsPic left" src="{{imgUrl}}">
+                </a>
+                <div class="rightBox">
+                    <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" class="goodsInfo" external>
+                        <div class="goodsName">{{name}}</div>
+                        <div class="priceBox right">
+                            <div class="goodsPrice">&yen {{price}}</div>
+                            <div class="voucherBox">使用代金券<span class="voucher">{{discount}}</span>元</div>
+                        </div>
+                    </a>
+                    <div class="btnGroup">
+                        <button class="btn2 button-fill button-warning right sureBtn confirm-ok-cancel" data-id="{{id}}">确认收货</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/ifCond}}
+    {{#ifCond status "==" 2}}
+        <div class="orderList">
+            <div class="storeName">{{storeName}}</div>
+            <div class="goodsInfoItem">
+                <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" external>
+                    <img class="goodsPic left" src="{{imgUrl}}">
+                </a>
+                <div class="rightBox">
+                    <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" class="goodsInfo" external>
+                        <div class="goodsName">{{name}}</div>
+                        <div class="priceBox right">
+                            <div class="goodsPrice">&yen {{price}}</div>
+                            <div class="voucherBox">使用代金券<span class="voucher">{{discount}}</span>元</div>
+                        </div>
+                    </a>
+                    <div class="btnGroup">
+                        <!--<button class="btn btn-default right not-fill discussBtn confirm-ok-cancel" data-id="{{id}}" data-productId="{{productId}}">评价</button>-->
+                        <p><a href="#" class="create-discuss-popup" data-id="{{id}}" data-productId="{{productId}}"><button class="btn btn-default right not-fill discussBtn" data-id="{{id}}" data-productId="{{productId}}">评价</button></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/ifCond}}
+    {{#ifCond status "==" 3}}
+        <div class="orderList">
+            <div class="storeName">{{storeName}}</div>
+            <div class="goodsInfoItem">
+                <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" external>
+                    <img class="goodsPic left" src="{{imgUrl}}">
+                </a>
+                <div class="rightBox">
+                    <a href="/product/goodDetails/goodsDetails.htm?id={{productId}}" class="goodsInfo" external>
+                        <div class="goodsName">{{name}}</div>
+                        <div class="priceBox right">
+                            <div class="goodsPrice">&yen {{price}}</div>
+                            <div class="voucherBox">使用代金券<span class="voucher">{{discount}}</span>元</div>
+                        </div>
+                    </a>
+                    <div class="btnGroup">
+                        <div class="textDescription">已评价</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/ifCond}}
+
+{{/each}}
+<!--<div class="popup popup-discuss">
+    <div class="content-block">
+        <div class="jx-pop-title">
+            <i class="icon icon-closepop close-popup"></i>
+        </div>
+        <textarea placeholder="请输入评论内容......">
+
+        </textarea>
+        <footer class="orange-btn open-about" id="sureDiscuss">
+            提交评价
+        </footer>
+    </div>
+</div>-->

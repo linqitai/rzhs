@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>代金卷</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+
+    <link rel='stylesheet' href='/jx-business/src/c/css/base/sm.css'/>
+    <link rel='stylesheet' href='/jx-business/src/c/css/base/sm-extend.css'/>
+
+    <link rel="stylesheet" href="/jx-business/src/c/css/normalize.css">
+    <link rel="stylesheet" href="/jx-business/src/c/css/common.css">
+    <link rel="stylesheet" href="/jx-business/src/p/commodity/index.css">
+    <script src="https://a.alipayobjects.com/??seajs/seajs/2.1.1/sea.js,seajs/seajs-combo/1.0.0/seajs-combo.js,seajs/seajs-text/1.0.2/seajs-text.js,seajs/seajs-style/1.0.2/seajs-style.js,seajs/seajs-log/1.0.0/seajs-log.js,gallery/json/1.0.3/json.js"></script>
+
+    <script src="/jx-business/src/config.js"></script>
+    <script>
+        seajs.config({
+            paths: {
+                alinw: '/jx-business/sea-modules/alinw',
+                devo: 'http://192.168.19.249'
+            },
+
+            comboExcludes: /.*/,
+            alias: {
+                'handlebars': 'alinw/handlebars/1.3.0/handlebars'
+            }
+        });
+
+        seajs.use([
+
+        ]);
+    </script>
+</head>
+<body>
+<div class="page" id="voucherManer" >
+    <header class="bar bar-nav shadow">
+        <a class="icon icon-left pull-left" href="/jx-business/pages/home/index.html" external></a>
+        <div class="titletype "><a href="">商品管理</a></div>
+        <div class="titletype"><a href="">预约管理</a></div>
+        <div class="titletype active"><a href="">代金卷</a></div>
+    </header>
+    <div class="content" >
+        <div class="viewvoucher">
+            <ul>
+                <li class="defer">未结算代金卷总额：<span class="money" id="allmone">560.00</span>元</li>
+                <li class="defer">已结算代金卷总额：<span id="overmone">80.00</span></li>
+                <li class="defer">已确认消费代金卷总额：<span id="overSureMone">20.00</span></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<script>
+    seajs.use('/jx-business/src/p/commodity/voucherManer');
+</script>
+</body>
+</html>

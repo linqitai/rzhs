@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>商品详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+
+    <link rel='stylesheet' href='/jx-business/src/c/css/base/sm.css'/>
+    <link rel='stylesheet' href='/jx-business/src/c/css/base/sm-extend.css'/>
+    <link rel="stylesheet" href="/jx-business/src/c/css/common.css">
+
+    <link rel="stylesheet" href="/jx-business/src/c/css/normalize.css">
+    <link rel="stylesheet" href="/jx-business/src/p/goodDetails/index.css">
+    <script src="https://a.alipayobjects.com/??seajs/seajs/2.1.1/sea.js,seajs/seajs-combo/1.0.0/seajs-combo.js,seajs/seajs-text/1.0.2/seajs-text.js,seajs/seajs-style/1.0.2/seajs-style.js,seajs/seajs-log/1.0.0/seajs-log.js,gallery/json/1.0.3/json.js"></script>
+
+    <script src="/jx-business/src/config.js"></script>
+    <script>
+        seajs.config({
+            paths: {
+                alinw: '/jx-business/sea-modules/alinw',
+                devo: 'http://192.168.19.249'
+            },
+
+            comboExcludes: /.*/,
+            alias: {
+                'handlebars': 'alinw/handlebars/1.3.0/handlebars'
+            }
+        });
+
+        seajs.use([
+
+        ]);
+    </script>
+</head>
+<body>
+<div class="page" id="myGoods">
+    <header class="bar bar-nav">
+        <a class="icon icon-left pull-left"></a>
+        <h1 class="title" id="title">商品名称</h1>
+    </header>
+    <div class="content">
+        <div class="topimg"><img src="https://img.alicdn.com/bao/uploaded/i1/TB1KQ2gKFXXXXaIaXXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg"></div>
+        <div class="introfont">
+            <div class="titleintro">夏新款卡通印花图案圆领短袖纯棉T恤女日系文艺小清新纯棉T恤女</div>
+            <div class="price"><span class="nowprice" id="nowpriceNum">&yen15.24</span><span class="pastprice">原价<span id="pastpriceNum">&yen13.05</span></span></div>
+            <div class="voucher">可用<span id="voucherMoney">10</span>元代金券</div>
+            <div class="user">
+                <div class="user-img"><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=828892948,921541388&fm=58" alt=""></div>
+                <div class="user-font">ANN LIMITED 美衣馆</div>
+            </div>
+        </div>
+        <div class="piclist">
+            <ul>
+                <li><img src="https://img.alicdn.com/bao/uploaded/i1/TB1KQ2gKFXXXXaIaXXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" ></li>
+                <li><img src="https://img.alicdn.com/bao/uploaded/i1/TB1KQ2gKFXXXXaIaXXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" ></li>
+                <li><img src="https://img.alicdn.com/bao/uploaded/i1/TB1KQ2gKFXXXXaIaXXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" ></li>
+            </ul>
+        </div>
+    </div>
+    <footer class="orange-btn open-about" id="sure">
+        立即预约
+    </footer>
+    <footer class="orange-btn" id="ok">
+        确定
+    </footer>
+    <div class="popup popup-about jx-pop pop-type">
+        <div class="jx-pop-title">
+            <i class="icon icon-closepop close-popup"></i>
+        </div>
+        <div class="jx-pop-content">
+            <div class="content-title">规格</div>
+            <ul>
+                <li class="type active" data-typeNum="0">315XX手环</li>
+                <li class="type" data-typeNum="1">400XX手环</li>
+                <li class="type" data-typeNum="2">500XX手环</li>
+                <li class="type" data-typeNum="3">600XX手环</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    seajs.use('/jx-business/src/p/goodDetails/goodsDetails');
+</script>
+</body>
+</html>

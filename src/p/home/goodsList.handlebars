@@ -1,0 +1,40 @@
+<ul class="list-container">
+    {{#each this}}            
+            {{#if_even @index}}
+                <li class="odd">
+                    <a class="goods-info-wrap" href="/product/goodDetails/goodsDetails.htm?id={{id}}&order=1" external>
+                        <div class="goods-pic">
+                            <img src="{{zoomPicPath}}">
+                        </div>
+                        <div class="goods-txt">
+                            {{name}}
+                        </div>
+                        <div class="goods-price">
+                            <div class="goods-price">
+                                <div class="goods-price-new"><i>&yen</i>{{showPrice}}</div>
+                                <!-- <div class="goods-price-old"><i>&yen</i>58.80</div> -->
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            {{else}}
+                <li>
+                    <a class="goods-info-wrap" href="/product/goodDetails/goodsDetails.htm?id={{id}}&order=1" external>
+                        <div class="goods-pic">
+                            <img src="{{zoomPicPath}}">
+                        </div>
+                        <div class="goods-txt">
+                            {{name}}
+                        </div>
+                        <div class="goods-price">
+                            <div class="goods-price">
+                                <div class="goods-price-new"><i>&yen</i>{{showPrice}}</div>
+                                <!-- <div class="goods-price-old"><i>&yen</i>58.80</div> -->
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            {{/if_even}}           
+    {{/each}}
+</ul>
+    

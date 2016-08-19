@@ -1,0 +1,419 @@
+/*******************tab style start************************/
+
+/*******************style start************************/
+/*tabCut样式开始*/
+.tabCut {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#tabCut2 {
+    display: none;
+}
+
+.tabCutBox {
+    width: auto;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.tabText.active {
+    color: #0099fb;
+}
+/*tab-cut样式结束*/
+/*orderList样式开始*/
+.content-block {
+    margin: 0;
+    padding: 0;
+}
+
+.orderList {
+    height: auto;
+    width: 100%;
+    margin-bottom: 0.4rem;
+    padding: .75rem 1rem .5rem;
+    font-size: 0.5rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.orderList .orderMeLine1 {
+    /*padding: 20px 0px;*/
+    padding-bottom: 1rem;
+    color: #646464;
+    overflow: hidden;
+    font-size: 0.6rem;
+}
+
+.orderList .orderMeLine1 .customer {
+    padding-left: 0.9rem;
+    background: url("http://static.hpbanking.com/xg/uploads/files/d081d01d9fc95c3248583a721d8ddc1d-22-22.png") no-repeat;
+    background-size: 0.7rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+}
+
+.orderList .orderMeLine1 .createTimeBox {
+    color: #969696;
+    height: 0.8rem;
+    line-height: 0.8rem;
+}
+
+.orderList .storeName {
+    padding-bottom: 0.2rem;
+    font-size: 0.6rem;
+    color: #646464;
+}
+
+.orderList .goodsInfo {
+    overflow: hidden;
+    clear: both;
+}
+
+.orderList .goodsPic {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+}
+
+.orderList .rightBox {
+    height: 100%;
+    padding-left: .5rem;
+    overflow: hidden;
+}
+
+.orderList .goodsName {
+    vertical-align: top;
+    font-size: .65rem;
+    color: #323232;
+    text-align: justify;
+    overflow: hidden;
+}
+.orderList .priceBox{
+    font-size: 0.7rem;
+    color: #323232;
+    padding: 0.5rem 0;
+    border-bottom: 0.1rem solid #eaeaea;
+    overflow: hidden;
+}
+.orderList .rightBox .voucherBox{
+    padding: 2% 0;
+}
+.orderList .orderStatus{
+    color: #48b07a;
+    font-size: .6rem;
+}
+.orderList .lastLine{
+    overflow: hidden;
+}
+.orderList .voucher{
+    color: #646464;
+}
+.orderList .goodsPrice {
+    font-size: .75rem;
+    color: #323232;
+    text-align: right;
+}
+
+.orderList .btnGroup {
+    clear: both;
+    margin-top: .3rem;
+    overflow: hidden;
+}
+.orderList .orderTotalPriceBox{
+    height: 1.6rem;
+    overflow: hidden;
+}
+.orderList .orderTotalPriceBox .boxMiddle{
+    height: 1.8rem;
+    line-height: 1.8rem;
+    overflow: hidden;
+}
+.orderList .orderTotalPrice {
+    font-size: 0.8rem;
+    color: #f1601f;
+}
+.orderList .sureBtn {
+    margin-left: 0.4rem;
+}
+/*header.bar{
+    box-shadow: 0 6px 20px -1px #e1e1e1;
+}*/
+/*
+@media (min-width: 360px) and (max-width: 370px) {
+    .btn{
+        height: 2rem;
+    }
+}
+@media (min-width: 370px) and (max-width: 410px) {
+    .btn{
+        height: 46px;
+    }
+}
+@media (min-width: 410px) and (max-width: 680px) {
+    .btn{
+        height: 52px;
+    }
+}
+@media (min-width: 680px) and (max-width: 1025px) {
+    !*******************tab style start************************!
+    .select-tab{
+        padding:  0.5rem 2rem;
+        border-bottom: none;
+    }
+    .select-tab .buttons-tab{
+        background-color: transparent;
+
+    }
+    .select-tab .buttons-tab:after{
+        background-color: transparent;
+    }
+    .select-tab .buttons-tab span{
+        font-size: 25px;
+        color: #969696;
+    }    
+    .select-tab .buttons-tab .button.active{
+        border:none;
+    }
+    .select-tab .buttons-tab .button.active span{
+        font-weight: 600;
+        color: #f1601f;
+        padding-bottom: 6px;
+        border-bottom:2px solid #f1601f;
+    }
+    !*没有数据时的样式*!
+    .missing {
+        text-align: center;
+        margin: 150px auto;
+        font-size: 24px;
+    }
+
+    .missing img {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 20px;
+    }
+    .buttons-tab a span{
+        font-size: 24px;
+    }
+    !*******************style start************************!
+    !*tabCut样式开始*!
+    .tabCut {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #tabCut2 {
+        display: none;
+    }
+
+    .tabCutBox {
+        width: auto;
+        display: block;
+        overflow: hidden;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .tabCut .tabText {
+        padding: 10px 20px;
+        height: 50px;
+        line-height: 50px;
+        font-weight: bold;
+    }
+
+    .tabText.active {
+        color: #0099fb;
+    }
+
+    .tabLine {
+        height: 40px;
+        line-height: 40px;
+        color: #646464;
+    }
+    !*orderList样式开始*!
+    .orderList {
+        font-size: 26px;
+    }
+
+    .orderList .storeName {
+        padding-bottom: 7px;
+        font-size: 26px;
+        color: #323232;
+    }
+
+    .orderList .goodsInfo {
+        overflow: hidden;
+        clear: both;
+    }
+
+    .orderList .goodsPic {
+        display: block;
+        width: 180px;
+        height: 180px;
+    }
+
+    .orderList .rightBox {
+        height: 100%;
+        padding-left: 4%;
+        overflow: hidden;
+    }
+
+    .orderList .goodsName {
+        font-size: 20px;
+        color: #323232;
+        text-align: justify;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: keep-all;
+    }
+
+    .orderList .goodsPrice {
+        font-size: 26px;
+        color: #f1601f;
+        margin: 2% 0;
+    }
+
+    .orderList .btnGroup {
+        clear: both;
+    }
+
+    .orderList .sureBtn {
+        margin-left: 10px;
+    }
+    .btn{
+        height: 60px;
+        font-size: 24px;
+    }
+    !*!/预约我的样式*!
+    .orderMeList {
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+        padding: 0 4% 20px;
+        font-size: 26px;
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    .orderMeLine1 {
+        padding: 20px 0px;
+        color: #646464;
+        overflow: hidden;
+        font-size: 26px;
+    }
+
+    .orderMeLine1 .customer {
+        padding-left: 30px;
+        background: url("http://static.hpbanking.com/xg/uploads/files/d081d01d9fc95c3248583a721d8ddc1d-22-22.png") no-repeat;
+        background-size: 26px;
+        height: 26px;
+        line-height: 26px;
+    }
+
+    .orderMeLine1 .createTimeBox {
+        color: #969696;
+        height: 26px;
+        line-height:26px;
+    }
+
+    .orderMeList .goodsInfo {
+        overflow: hidden;
+        clear: both;
+        display: inline-block;
+    }
+
+    .orderMeList .goodsInfo .goodsPic {
+        width: 20%;
+    }
+
+    .orderMeList .goodsInfo .rightBox {
+        padding-left: 4%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .orderMeList .goodsInfo .goodsName {
+        font-size:26px;
+        color: #646464;
+        text-align: justify;
+        overflow: hidden;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        white-space: nowrap;
+    }
+
+    .orderMeList .goodsInfo .goodsPrice {
+        font-size: 26px;
+        font-weight: 600;
+        color: #323232;
+    }
+
+    .orderMeList .goodsInfo .goodsNumberBox {
+        color: #969696;
+        clear: both;
+        font-size: 0.9rem;
+        overflow: hidden;
+    }
+
+    .orderMeList .goodsInfo .goodsInfoLastLine {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 16px;
+    }
+
+    .orderMeList .goodsInfo .orderStatus {
+        font-size: 26px;
+        color: #48b07a;
+        height: 26px;
+        line-height:26px;
+        margin-top:5px;
+    }
+
+    .orderMeList .orderTotalPriceBox .orderTotalPrice {
+        font-size: 26px;
+        font-weight: 600;
+    }
+}*/
+.AllVoucher{
+    color: #f1601f;
+}
+.rep-m {
+    font-size: .65rem;
+}
+.goodsNumber {
+    color: #969696;
+}
+.f5 {
+    font-size: .5rem;
+}
+.btnGroup .sure {
+    float: right;
+    padding: 0 .5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: .2rem;
+    background: #fff;
+    color: #f1601f;
+    font-size: .65rem;
+    border: 1px #f1601f solid;
+    border-radius: 0.1rem;
+    text-align: center;
+    width: 5rem;
+}
+.grey {
+    color: #969696!important;
+}
+/*orderList样式结束*/
+/*******************style end************************/
+/*
+.infinite-scroll-preloader {
+    margin-top:-20px;
+}*/

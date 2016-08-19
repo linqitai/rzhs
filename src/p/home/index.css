@@ -1,0 +1,413 @@
+===============================swiper start===============================*/
+.banner {
+    width: 100%;
+}
+
+.banner .swiper-slide img {
+    width: 100%;   
+}
+
+.banner .swiper-slide .J_img_link {
+    width: 100% !important;
+}
+
+.banner .swiper-container {
+    padding-bottom: 0;
+}
+
+.banner .swiper-container-horizontal > .swiper-pagination {
+	transition: 0ms;
+    bottom: 0 !important;
+}
+
+.banner .bar:after {
+    height: 0;
+}
+
+.banner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.banner .swiper-slide a {
+    width: 100%;
+}
+
+.banner .swiper-container-horizontal > .swiper-pagination {
+    padding-bottom: 0.5rem;
+}
+.banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #eae8e7;
+    background: #fff !important;
+}
+.banner .swiper-pagination-bullet {
+    /*background: #f0f0f0;*/
+    background: none !important;
+}
+.banner .swiper-container-horizontal > .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 5px;
+    border: 1px #fff solid;
+}
+.banner .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fff;
+    opacity: 0.8;
+}
+/*===============================swiper end===============================*/
+/*===============================nav start===============================*/
+#index .buttons-tab .button {
+    font-size: 0.75rem;
+    height: 1.7rem;
+    color: #646464;
+    border-bottom: 2px solid transparent;
+    width: 1.5rem !important;
+    display: inline-block;
+    overflow: hidden;
+}
+#index .buttons-tab .button.active {
+    z-index: 100;
+    color: #f1601f;
+    border-color: #f1601f;
+}
+#index .buttons-tab {
+    margin: 0 .75rem .4rem .35rem;
+    overflow: hidden;
+    position: relative;
+    background: none;
+    /*background: url("http://static.hpbanking.com/xg/uploads/files/e619f7dc6bff0a6354839136f99f3eb4-20-70.png") right center no-repeat;*/
+}
+.menu-mask {
+    position: absolute;
+    right: 0;
+    height: 1.7rem;
+    top: 0.2rem;
+    z-index: 10;
+}
+#index .button {
+    padding: 0;
+    /*margin: 0 .3rem;*/
+}
+#index .buttons-tab:after {
+    background: none;
+}
+#index .content-block {
+    margin: 0 0;
+    padding: 0 0.65rem;
+}
+#J_menu .swiper-slide {
+    /*padding: 0 .5rem;*/
+    text-align: center;
+    width: 15%;
+}
+/*===============================nav end===============================*/
+/*===============================menu start===============================*/
+.goods-nav {
+    /*margin: 0.5rem 0.5rem 0.4rem;*/
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+.goods-nav ul li {
+    float: left;
+    font-size: 0.75rem;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
+    text-align: center;
+    color: #646464;    
+}
+.goods-nav ul li span {
+    display: inline-block;    
+    padding-right: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.1rem;
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;  
+    cursor: pointer;
+}
+.goods-nav ul li.active {
+    color: #f1601f;    
+}
+.goods-nav ul li.active span {
+    display: inline-block;    
+    padding-right: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.1rem;
+    width: 100%;
+    border-bottom: 2px solid #f1601f;
+}
+/*===============================menu end===============================*/
+/*===============================goods start===============================*/
+#index .content {
+    background: #f2f2f2;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    overflow-x: hidden;
+    /*height: 6000px;*/
+} 
+#search .search-content {
+    background: #f2f2f2;
+    width: 100%;
+    overflow-x: hidden;
+    /*height: 6000px;*/
+}
+.goods-list {
+    margin-right: 0.65rem;
+    margin-left: 0.65rem;
+}
+.goods-list-2 {
+    margin-top: .75rem;    
+    margin-right: 0.65rem;
+    margin-left: 0.65rem;
+}
+.goods-list-3 {
+    margin-top: .75rem;    
+    margin-right: 0.65rem;
+    margin-left: 0.65rem;
+}
+.goods-info {
+    overflow: hidden; 
+    display: none;
+}
+.goods-info-list {
+    overflow: hidden;
+}
+.goods-info-list ul li {
+    width: 47.5%;
+    float: left;    
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem;
+}
+.odd {
+    margin-right: 5%;
+}
+.goods-pic {
+    /*width: 100%;*/
+    /*border: 1px solid #e5e5e5;*/
+    /*background: #eaeaea url("http://static.hpbanking.com/xg/uploads/files/28fa232142d5ee22a3b325758e044ec9-93-69.png") center center no-repeat;
+    background-size: 2.3rem 1.6rem;*/
+}
+.goods-txt {
+    font-size: 0.6rem;
+    color: #323232;
+    margin-top: 0.3rem;
+    line-height: 0.75rem;
+}
+.goods-pic img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e5e5e5;
+}
+.goods-price {
+   /* color: #f1601f;
+    font-size: 0.9rem;*/
+    overflow: hidden;
+}
+.goods-price-new {
+    float: left;
+    color: #f1601f;
+    font-size: .9rem;
+}
+.goods-price-old {
+    float: right;
+    color: #c5c5c5;
+    font-size: .6rem;
+    padding-top: .25rem;
+    padding-right: .1rem;
+    text-decoration:line-through;
+}
+.goods-price i {
+    font-style: normal;
+}
+/*加载提示符*/
+#index .infinite-scroll-preloader {
+    margin-top: -20px;
+    display: none;
+}
+/*加载提示符*/
+#search .infinite-scroll-preloader {
+    /*margin-top: -5px;*/
+    display: none;
+}
+.goods-info .infinite-scroll-preloader {
+    margin-bottom: 0; 
+}
+/*===============================goods end===============================*/
+#search header {
+    height: 2.2rem;
+    background: #fff;  
+    overflow: hidden;  
+}
+#search .icon {
+    padding-left: 0.2rem;
+}
+#search header .icon-left {
+    float: left;
+    padding: 0.5rem;
+}
+.search-bar {
+    margin-top: 0.3rem;
+    overflow: hidden;
+}
+.search-btn {
+    position: absolute;
+    background-color: #d9d9d9;   
+    top: 0.35rem;
+    right: 0.75rem;
+    border-radius: .1rem;
+    color: #fff;
+    font-size: 0.65rem;
+    padding: 0.25rem 0.5rem;
+}
+.search-btn.active {
+    background: #f1601f;
+}
+.search-input-wrap{
+    border-radius: 0.1rem;
+    margin-right: 3rem;
+    background-color: #f0eeee;
+    padding: 0.15rem 0.2rem;
+}
+.search-input-wrap input {
+    border: 0;
+    background-color: #f0eeee;
+    font-size: 0.65rem;
+}
+.bar input[type="search"] {
+     margin: 0; 
+     height: 1.1rem;
+     position: absolute;
+     top: .5rem;
+     width: 40%;
+}
+.search-clean-img {
+    display: inline-block;
+    margin: 1rem auto;
+    width: 0.8rem;
+    margin-top: 0.25rem;
+    position: absolute;
+    right: 4rem;
+}
+.search-clean-img {
+    display: none;
+}
+.search-clean {
+    width: 100%;
+    text-align: center;
+}
+.search-clean-txt {
+    width: 5.25rem;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    text-align: center;
+    display: inline-block;
+    margin: 1.9rem auto;
+    font-size: 0.6rem;
+    color: #f1601f;
+    border: 1px solid #f1601f;
+    border-radius: 0.2rem;
+}
+.history-tip {
+    font-size: 0.6rem;
+    color: #969696;
+    padding: 1rem 0.75rem 0;
+}
+.search-list {
+    margin-top: .5rem;
+}
+.search-list ul {
+    background: #fff;
+    padding-left: 0.75rem;
+}
+.search-list ul li {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 0.7rem;
+}
+.bb {
+    border-bottom: 1px solid #eaeaea;
+}
+.history-wraper {
+    display: none;
+}
+/*.history-tip {
+    display: none;
+}
+.search-data {
+    display: none;
+}*/
+.search-no-data {
+    display: none;
+    text-align: center;
+}
+.search-no-img {
+    width: 3rem;
+    height: 3rem;
+    margin: 8rem auto 0;
+}
+.no-img {
+    width: 3rem;
+    height: 3rem;
+    margin: 2rem auto 0;
+}
+.search-no-log {
+    color: #969696;
+    font-size: 0.7rem;
+}
+.search-no-data-2 {
+    display: none;
+    color: #969696;
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    margin-top: 0.5rem;
+}
+.page {
+    display: none;
+}
+.search-list ul li .h_name {
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 60%;
+    color: #646464;
+}
+.h_count {
+    float: right;
+    color: #969696;
+    font-size: 0.7rem;
+    padding-right: 0.75rem;
+}
+.content-inner .infinite-scroll-preloader {
+    margin-top: 1rem !important;
+    display: none;
+}
+/*.fix {
+    position: absolute;
+    width: 100%;
+    top: 2.2rem;
+    z-index: 999;
+    background: #f2f2f2;
+}

@@ -1,0 +1,57 @@
+<nav class="goods-nav" id="J_goods_nav">
+	<img src="http://static.hpbanking.com/xg/uploads/files/e619f7dc6bff0a6354839136f99f3eb4-20-70.png" class="menu-mask">
+	<div id="J_menu">     
+	    <ul class="swiper-wrapper">
+	    	{{#each this}}
+		    	{{#ifCond @index '==' '0'}}
+	        		<li class="goods-li active swiper-slide" data-page="1" data-id="{{id}}"><span>全部</span></li>
+	        	{{else}}
+	        		<li class="goods-li swiper-slide" data-id="{{id}}"><span>{{name}}</span></li>
+		        {{/ifCond}}
+		    {{/each}}
+	    </ul>		                       
+	</div>
+</nav>                    
+<div class="goods-list" id="J_goods_list">
+	{{#each this}}
+		{{#ifCond @index '==' '0'}}
+		    <div class="goods-info" style="display: block">
+		    	<div class="goods-info-list">
+
+		    	</div>
+		    	<!-- 已经全部加载全部 -->
+                <div class="search-no-data-2">			            
+		            <div class="search-no-log">已经全部加载</div>
+		        </div>
+		    	<!-- 暂无数据提示 -->
+                <div class="search-no-data">
+		            <img src="http://static.hpbanking.com/xg/uploads/files/10f825fd8a0668d92becf7a9571ac777-120-120.png" class="no-img">
+		            <div class="search-no-log">暂无记录</div>
+		        </div>
+		        <!-- 加载提示符 -->
+                <div class="infinite-scroll-preloader J_loading">
+                    <div class="preloader"></div>
+                </div>
+		    </div>
+    	{{else}}
+	    	<div class="goods-info">
+	    		<div class="goods-info-list">
+
+		    	</div>
+		    	<!-- 已经全部加载全部 -->
+                <div class="search-no-data-2">			            
+		            <div class="search-no-log">已经全部加载</div>
+		        </div>
+		    	<!-- 暂无数据提示 -->
+	            <div class="search-no-data">
+		            <img src="http://static.hpbanking.com/xg/uploads/files/10f825fd8a0668d92becf7a9571ac777-120-120.png" class="no-img">
+		            <div class="search-no-log">暂无记录</div>
+		        </div>
+		         <!-- 加载提示符 -->
+                <div class="infinite-scroll-preloader J_loading">
+                    <div class="preloader"></div>
+                </div>
+	    	</div>
+	    {{/ifCond}}
+    {{/each}}      
+</div>
